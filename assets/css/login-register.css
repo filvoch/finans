@@ -1,0 +1,325 @@
+/*
+ *
+ * login-register modal
+ * Autor: Guilherme Filvoch
+ * 
+ */
+
+/*  Shake animation  */
+
+@charset "UTF-8";
+.animated {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.hinges {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.animated.slow {
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+.animated.snail {
+    -webkit-animation-duration: 4s;
+    -moz-animation-duration: 4s;
+    -o-animation-duration: 4s;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translateX(10px);
+    }
+}
+
+@-moz-keyframes shake {
+    0%, 100% {
+        -moz-transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        -moz-transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        -moz-transform: translateX(10px);
+    }
+}
+
+@-o-keyframes shake {
+    0%, 100% {
+        -o-transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        -o-transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        -o-transform: translateX(10px);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    -moz-animation-name: shake;
+    -o-animation-name: shake;
+    animation-name: shake;
+}
+
+.login .modal-dialog {
+    width: 350px;
+}
+
+.login .modal-footer {
+    border-top: 0;
+    margin-top: 0px;
+    padding: 10px 20px 20px;
+}
+
+.login .modal-header {
+    border: 0 none;
+    padding: 11px 15px;
+}
+
+.modal-header {
+    min-height: 16.428571429px;
+}
+
+.modal-content {
+ width: 350px;
+ border-radius: 10px;
+ background: #fff;
+    /* background: url(../img/modal1.jpg) ; */
+}
+
+.modal-body {
+    position: relative;
+    padding: 20px;
+}
+
+.login .division {
+    float: none;
+    margin: 0 auto 18px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.login .division .line {
+    border-top: 1px solid rgb(221, 221, 221);
+    position: absolute;
+    top: 10px;
+    width: 40%;
+}
+
+.login .division .line.l {
+    left: 0;
+}
+
+.login .division .line.r {
+    right: 0;
+}
+
+.login .division span {
+    color: #424242;
+    font-size: 17px;
+}
+
+.login .box .social {
+    float: none;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.login .social {
+    color: #FFFFFF;
+    display: inline-block;
+    text-align: center;
+}
+
+.login .social .circle .fa {
+    font-size: 16px;
+}
+
+.login .social .facebook {
+    background-color: #455CA8;
+    width: 90%;
+    color: white;
+}
+
+.login .social .google {
+    background-color: #F74933;
+    width: 90%;
+    color: white;
+}
+
+.login .social .github {
+    background-color: rgba(26, 25, 25, 0.822);
+    width: 90%;
+    color: white;
+}
+
+.login .facebook:hover {
+    color: rgb(15, 15, 15);
+}
+
+.login .google:hover {
+    color: rgb(15, 15, 15);
+}
+
+.login .github:hover {
+    color: rgb(15, 15, 15);
+}
+
+.login .forgot {
+    color: #3d3d3d;
+    margin-left: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+.login .btn-login, .registerBox .btn-register {
+    background: #d6a727;
+    background: -webkit-linear-gradient(right,#eb977591,#9b602f7a,#d48d08,#cfb45b63);
+    left: -100%;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    border-width: 0;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.login .btn-login:hover, .registerBox .btn-register:hover {
+    background: -webkit-linear-gradient(right,#c2eb75,#82af18,#58d108,#1ae713);
+    color: #FFFFFF;
+}
+
+.login .form-control {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    color: #FFFFFF;
+}
+
+.login .form-control:hover {
+    background-color: rgba(0, 0, 0, .16) !important;
+}
+
+.login .form-control:focus {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset !important;
+    background-color: rgba(0, 0, 0, 0.23) !important;
+    color: #FFFFFF;
+}
+
+.login .box .form input[type="text"], .login .box .form input[type="password"] {
+    border-radius: 3px;
+    border: none;
+    color: #333333;
+    font-size: 16px;
+    height: 46px;
+    margin-bottom: 5px;
+    padding: 13px 12px;
+    width: 100%;
+}
+
+@media (max-width:400px) {
+    .login .modal-dialog {
+        width: 100%;
+    }
+}
+
+.big-login, .big-register {
+    background-color: rgba(238, 235, 228, 0.993);
+    color: rgb(7, 0, 0);
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+}
+
+.big-login:hover {
+    background-color: rgb(228, 167, 0);
+    color: #FFFFFF;
+}
+
+.big-register {
+    background-color: rgba(0, 0, 0, .0);
+    color: #00bbff;
+    border-color: #00bbff;
+}
+
+.big-register:hover {
+    border-color: #00A4E4;
+    color: #00A4E4;
+}
+
+.modal-title {
+    position: absolute;
+    float: left;
+    line-height: 1.428571429;
+    font-size: 1.1em;
+}
+
+/* .modal-header .close {
+    margin-top: -2px;
+} */
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.close {
+    position: relative;
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+
+.fa-fw {
+    width: 1.4857142857142858em !important;
+    text-align: center !important;
+}

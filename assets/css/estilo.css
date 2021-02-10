@@ -1,0 +1,77 @@
+#home {
+	background: #ffc107;
+	color: white;
+	margin-top: 77px;
+}
+
+section.caixa {
+	padding: 60px 0 !important;
+	border-bottom: 1px solid #e5e5e5 !important;
+}
+
+footer {
+	background: #ffc107;
+	color: white;
+	padding: 15px 0px 5px 0px;
+}
+
+footer p a {
+	margin: 5px 15px;
+}
+
+div.redes a i {
+	margin: 2px;
+}
+
+div.redes a i:hover {
+	transform: scale(1.2);
+	transition-delay: 0.1s;
+}
+
+div.container a img:hover {
+	transform: scale(1.1);
+	transition-delay: 0.2s;
+}
+
+body {
+	background-attachment: fixed;
+}
+
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background: rgba(255, 193, 7, 0.945);
+}
+
+body {
+	height: 100%;
+}
+
+
+.border-custom {
+	border: 1px solid gray;
+}
+
+.mulhercapa {
+	padding-left: 35px !important;
+}
+
+/***************** Scrollbar ***************/
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: rgba(255, 193, 7, 0.945);
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-color: #a6a6a6;
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+	background-image: -webkit-linear-gradient(330deg, #252525 0%, #888686 100%);
+	background-image: linear-gradient(120deg, #131312 0%, #ffc107 100%);
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}

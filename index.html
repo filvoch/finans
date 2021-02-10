@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>Finans - finanças pessoais</title>
+
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- Estilo Customizado -->
+  <link rel="stylesheet" href="assets/css/estilo.css">
+  <link rel="stylesheet" href="assets/css/display.css">
+  <link rel="stylesheet" href="assets/css/login-register.css">
+
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top navbar-transparente mb-5">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="assets/img/logo.png" alt="Finans" width="142">
+        </a>
+
+        <button class="navbar-toggler mr-2" data-toggle="collapse" data-target="#nav-principal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto" id="flex-custom">
+            <li class="nav-item active">
+              <a href="" class="nav-link list-line">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link list-line">Recursos</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link list-line">Benefícios</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link list-line">Preços</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="btn big-login entrar-custom" data-toggle="modal" href="javascript:void(0)"
+                onclick="openLoginModal();">Entrar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <!-- Textos da secao -->
+        <div class="col-md-6 d-flex">
+          <div class="align-self-center">
+            <h1 class="display-4 display-10">Suas contas, descomplicadas</h1>
+            <p class="lead">
+              Usado por mais de 1 milhão de pessoas, o Finans é uma ferramenta online que vai facilitar sua vida
+              financeira.
+            </p>
+            <form class="mt-4 mb-4">
+              <div class="input-group input-group-lg">
+                <input type="text" placeholder="Seu e-mail" class="form-control">
+                <div class="input-group-append mr-4">
+                  <button type="button" class="btn btn-primary">Cadastre-se</button>
+                </div>
+              </div>
+            </form>
+            <p>
+              Disponível para
+              <a href="" class="btn btn-outline-light">
+                <i class="fab fa-android fa-lg"></i>
+              </a>
+              <a href="" class="btn btn-outline-light">
+                <i class="fab fa-apple fa-lg"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 d-none d-md-block ml-0">
+          <img class="img-fluid mulhercapa" src="assets/img/capa-mulher.png" alt="Modelo capa">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="caixa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex">
+          <div class="align-self-center">
+            <h2 class="">Saiba para onde vai o seu dinheiro</h2>
+            <p class="lead">
+              Com o Finans, você categoriza todos os seus lançamentos.
+              Com gráficos simples, você sabe de onde vem e para onde
+              vai o seu dinheiro.
+            </p>
+            <a href="#" class="btn btn-primary mb-4">Veja mais</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="assets/img/saiba.png" alt="Saiba">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="caixa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-fluid" src="assets/img/juros.png" alt="Saiba">
+        </div>
+        <div class="col-md-6 d-flex">
+          <div class="align-self-center">
+            <h2 class="mt-4">Pare de pagar juros e economize</h2>
+            <p class="lead">
+              Manter as contas em dia é sempre um problema?
+              O Finans avisa você: receba alertas de contas
+              a pagar e a receber!
+            </p>
+            <a href="#" class="btn btn-primary">Veja mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="caixa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-fluid" src="assets/img/facil.png" alt="facil">
+          <h4>Fácil de usar</h4>
+          <p class="lead">
+            O Finans vai além do básico e permite que você faça
+            controles incríveis, essenciais para sua finanças.
+            Simples como tem que ser!
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="assets/img/economize.png" alt="economize">
+          <h4 class="mt-4">Economize seu tempo</h4>
+          <p class="lead">
+            Tempo é dinheiro! Em segundos, você tem tudo sobe controle
+            e aproveite seu tempo com o que realmente importa pra você!
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="assets/img/suporte.png" alt="suporte">
+          <h4 class="mt-4">Suporte amigo</h4>
+          <p class="lead">
+            Dúvidas? Perguntas? Nosso suporte super legal ajuda você!
+            A gente tá aqui para resolver seus problemas e deixar sua
+            vida bem mais fácil!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="navbar-nav col-md-6">
+          <p class="lead">
+            <a href="#">Home</a>
+            <a href="#">Recursos</a>
+            <a href="#">Benefícios</a>
+            <a href="#">Preços</a>
+          </p>
+        </div>
+        <div class="redes col-md-6 d-flex justify-content-end">
+          <a href="" class="text-primary ml-2">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="" class="text-primary ml-2">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="" class="text-danger ml-2">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="" class="text-danger ml-2">
+            <i class="fab fa-youtube fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal">
+    <div class="modal-dialog login animated">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close fas fa-times" data-dismiss="modal" aria-hidden="true"></button>
+          <h4 class="modal-title">Logar com</h4>
+        </div>
+        <div class="modal-body">
+          <div class="box">
+            <div class="content">
+              <div class="error"></div>
+              <div class="form loginBox">
+                <form accept-charset="UTF-8">
+                  <input id="email_login" class="form-control" type="text" placeholder="Seu email" name="email">
+                  <input id="password_login" class="form-control" type="password" placeholder="Senha" name="password">
+                  <input class="btn btn-default btn-login" type="button" value="entrar" onclick="loginAjax()">
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="content registerBox" style="display: none;">
+              <div class="form">
+                <form accept-charset="UTF-8">
+                  <input id="email_register" class="form-control" type="text" placeholder="Seu email" name="email">
+                  <input id="password_register" class="form-control" type="password" placeholder="Senha"
+                    name="password">
+                  <input id="password_confirmation" class="form-control" type="password" placeholder="Repetir a senha"
+                    name="password_confirmation">
+                  <input class="btn btn-default btn-register" type="button" value="Criar conta" name="commit">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="division">
+          <div class="line l"></div>
+          <span>ou</span>
+          <div class="line r"></div>
+        </div>
+        <div class="social">
+          <a id="github_login" class="d-block mb-2" href="#">
+            <span class="github btn"><i class="fab fa-github pr-1"></i> Github</span>
+          </a>
+          <a id="google_login" class="d-block mb-2" href="#">
+            <span class="google btn "><i class="fab fa-google pr-1"></i> Google</span>
+          </a>
+          <a id="facebook_login" class="d-block" href="#">
+            <span class="facebook btn"><i class="fab fa-facebook-f pr-1"></i> Facebook</span>
+          </a>
+        </div>
+        <div class="modal-footer">
+          <div class="forgot login-footer">
+            <span>Não tem uma conta?
+              <a href="javascript: showRegisterForm();">Crie a sua aqui.</a>
+            </span>
+          </div>
+          <div class="forgot register-footer" style="display: none;">
+            <span>Já tem uma conta?</span>
+            <a href="javascript: showLoginForm();">Logue-se aqui</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script>
+    $(document).ready(function () {
+      openLoginModal();
+    });
+  </script> -->
+  <!-- Fim / Modal -->
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/login-register.js"></script>
+</body>
+
+</html>
